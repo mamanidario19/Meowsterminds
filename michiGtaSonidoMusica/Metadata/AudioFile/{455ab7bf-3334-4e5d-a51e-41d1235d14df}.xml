@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{455ab7bf-3334-4e5d-a51e-41d1235d14df}">
+		<property name="assetPath">
+			<value>ambMeowstermindsCityExt01.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>62.035791666666668</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{082e5581-f7f4-4890-a08f-dd61711d48b7}</destination>
+		</relationship>
+	</object>
+</objects>
