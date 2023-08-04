@@ -49,13 +49,15 @@ public class CharacterInput : MonoBehaviour
         y = Input.GetAxis("Vertical"); 
 
         characterAnimator.Run();
-        characterMovement.Movement();        
+        characterMovement.Movement();
+
+        mouseX = Input.GetAxis("Mouse X");
+        mouseY = Input.GetAxis("Mouse Y");
     }
 
     //En este LateUpdate almacenamos en la variable MouseX y MouseY, los valores obtenidos por el Mouse//
     void LateUpdate()
     {
-        mouseX += Input.GetAxis("Mouse X");
-        mouseY -= Input.GetAxis("Mouse Y");
+
     }
 }
