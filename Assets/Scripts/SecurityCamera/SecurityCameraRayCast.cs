@@ -26,7 +26,7 @@ public class SecurityCameraRayCast : MonoBehaviour
             if (hitObject.CompareTag("Player"))
             {
                 securityCameraAlert.OnAlert();
-                Debug.LogError("Te estoy viendo!!!!!!!!!");
+                print("Te estoy viendo!!!!!!!!!");
             }
             else
             {
