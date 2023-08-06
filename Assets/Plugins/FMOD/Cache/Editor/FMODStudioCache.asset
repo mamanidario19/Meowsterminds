@@ -51,7 +51,7 @@ MonoBehaviour:
   - {fileID: 5619818805829622599}
   StringsBanks:
   - {fileID: 7658475483628727218}
-  cacheTime: 638266911468889270
+  cacheTime: 638267909204350982
   cacheVersion: 131605
 --- !u!114 &2459791184004479414
 MonoBehaviour:
@@ -68,7 +68,7 @@ MonoBehaviour:
   Path: michiGtaSonidoMusica/Build/Desktop/Bank A.bank
   Name: Bank A
   StudioPath: bank:/Bank A
-  lastModified: 638266911468809198
+  lastModified: 638267909203090982
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -115,7 +115,7 @@ MonoBehaviour:
   Path: michiGtaSonidoMusica/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638266911468879260
+  lastModified: 638267909204350982
   FileSizes:
   - Name: Desktop
     Value: 877280
@@ -135,7 +135,7 @@ MonoBehaviour:
   Path: michiGtaSonidoMusica/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638266911468889270
+  lastModified: 638267909204350982
   FileSizes:
   - Name: Desktop
     Value: 860
