@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{17136fc8-66db-4822-82f7-66031ec5c4ad}">
+		<property name="assetPath">
+			<value>sfxMenuButton02.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.8110208333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{082e5581-f7f4-4890-a08f-dd61711d48b7}</destination>
+		</relationship>
+	</object>
+</objects>

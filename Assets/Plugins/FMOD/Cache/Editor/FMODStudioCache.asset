@@ -46,13 +46,42 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: -747455259486519266}
   - {fileID: 4256369314919887757}
+  - {fileID: 941822411710474904}
+  - {fileID: 7740668607205542464}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5619818805829622599}
   StringsBanks:
   - {fileID: 7658475483628727218}
-  cacheTime: 638266851528235794
+  cacheTime: 638269358785242227
   cacheVersion: 131605
+--- !u!114 &941822411710474904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/prueba/jumpSfx
+  m_EditorClassIdentifier: 
+  Path: event:/prueba/jumpSfx
+  Guid:
+    Data1: -999041102
+    Data2: 1094215541
+    Data3: -531151212
+    Data4: 957213465
+  Banks:
+  - {fileID: 5619818805829622599}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 300
 --- !u!114 &2459791184004479414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,7 +97,7 @@ MonoBehaviour:
   Path: michiGtaSonidoMusica/Build/Desktop/Bank A.bank
   Name: Bank A
   StudioPath: bank:/Bank A
-  lastModified: 638266850536450699
+  lastModified: 638266131044178593
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -115,10 +144,10 @@ MonoBehaviour:
   Path: michiGtaSonidoMusica/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638266851528205873
+  lastModified: 638269358785222279
   FileSizes:
   - Name: Desktop
-    Value: 877280
+    Value: 897664
   Exists: 1
 --- !u!114 &7658475483628727218
 MonoBehaviour:
@@ -135,8 +164,35 @@ MonoBehaviour:
   Path: michiGtaSonidoMusica/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638266851528235794
+  lastModified: 638269358785242227
   FileSizes:
   - Name: Desktop
-    Value: 860
+    Value: 936
   Exists: 1
+--- !u!114 &7740668607205542464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/prueba/walkSfx
+  m_EditorClassIdentifier: 
+  Path: event:/prueba/walkSfx
+  Guid:
+    Data1: -1949309533
+    Data2: 1087883221
+    Data3: -1739799383
+    Data4: -1558544582
+  Banks:
+  - {fileID: 5619818805829622599}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 789
