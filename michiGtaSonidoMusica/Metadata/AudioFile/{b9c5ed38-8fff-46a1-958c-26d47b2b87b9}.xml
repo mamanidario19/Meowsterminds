@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{b9c5ed38-8fff-46a1-958c-26d47b2b87b9}">
+		<property name="assetPath">
+			<value>sfxCatsoundPasiveDeath01.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.84231292517006806</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{082e5581-f7f4-4890-a08f-dd61711d48b7}</destination>
+		</relationship>
+	</object>
+</objects>

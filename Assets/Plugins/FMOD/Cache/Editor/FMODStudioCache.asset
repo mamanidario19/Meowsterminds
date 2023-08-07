@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8145880047781377314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/prueba/walkSfx
+  m_EditorClassIdentifier: 
+  Path: event:/prueba/walkSfx
+  Guid:
+    Data1: 1312944894
+    Data2: 1157787973
+    Data3: 973486758
+    Data4: 1697979051
+  Banks:
+  - {fileID: -7265595207657442858}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 789
 --- !u!114 &-7265595207657442858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,38 +42,11 @@ MonoBehaviour:
   Path: michiGtaSonidoMusica/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638269605803306920
+  lastModified: 638269630594776136
   FileSizes:
   - Name: Desktop
-    Value: 877280
+    Value: 893408
   Exists: 1
---- !u!114 &-6700899068876546787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/prueba/ambient
-  m_EditorClassIdentifier: 
-  Path: event:/prueba/ambient
-  Guid:
-    Data1: 1574034284
-    Data2: 1131361018
-    Data3: 1506034350
-    Data4: 734754408
-  Banks:
-  - {fileID: -7265595207657442858}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 62035
 --- !u!114 &-5074626545715876274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,6 +67,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 494
   Exists: 1
+--- !u!114 &-3369420375104964462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/prueba/sound
+  m_EditorClassIdentifier: 
+  Path: event:/prueba/sound
+  Guid:
+    Data1: 1528774296
+    Data2: 1106210021
+    Data3: 1868512681
+    Data4: -1101432792
+  Banks:
+  - {fileID: -7265595207657442858}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8347
 --- !u!114 &-747455259486519266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,10 +136,10 @@ MonoBehaviour:
   Path: michiGtaSonidoMusica/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638269605803316885
+  lastModified: 638269630594796085
   FileSizes:
   - Name: Desktop
-    Value: 860
+    Value: 898
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -131,14 +158,15 @@ MonoBehaviour:
   - {fileID: -5074626545715876274}
   - {fileID: -7265595207657442858}
   EditorEvents:
-  - {fileID: -6700899068876546787}
-  - {fileID: 3878771908178189993}
+  - {fileID: 6220567734730450106}
+  - {fileID: -3369420375104964462}
+  - {fileID: -8145880047781377314}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7265595207657442858}
   StringsBanks:
   - {fileID: -76988978214547907}
-  cacheTime: 638269605803316885
+  cacheTime: 638269630594796085
   cacheVersion: 131605
 --- !u!114 &2459791184004479414
 MonoBehaviour:
@@ -160,33 +188,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 494
   Exists: 1
---- !u!114 &3878771908178189993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/prueba/sound
-  m_EditorClassIdentifier: 
-  Path: event:/prueba/sound
-  Guid:
-    Data1: 1528774296
-    Data2: 1106210021
-    Data3: 1868512681
-    Data4: -1101432792
-  Banks:
-  - {fileID: -7265595207657442858}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8347
 --- !u!114 &4256369314919887757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,6 +235,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 877280
   Exists: 1
+--- !u!114 &6220567734730450106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/prueba/ambient
+  m_EditorClassIdentifier: 
+  Path: event:/prueba/ambient
+  Guid:
+    Data1: 1574034284
+    Data2: 1131361018
+    Data3: 1506034350
+    Data4: 734754408
+  Banks:
+  - {fileID: -7265595207657442858}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 62035
 --- !u!114 &7658475483628727218
 MonoBehaviour:
   m_ObjectHideFlags: 0
