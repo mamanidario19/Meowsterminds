@@ -1,3 +1,4 @@
+/* Esta clase actua como un metodo de estado "Estado Persecusion" del Enemigo*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,8 +6,8 @@ using UnityEngine;
 //Este script (Hijo) hereda los atributos de la clase Padre State
 public class PersecutionStatus : State
 {
-    private NavMeshController navMeshController; //me sirve 
-    private VisionController visionController; //messiii
+    private NavMeshController navMeshController; 
+    private VisionController visionController; 
     public UnityEngine.AI.NavMeshAgent agente;
     public Vector3 distPlayer; //Distancia jugador
     public Vector3 playerTrans; //Transform player
@@ -28,21 +29,20 @@ public class PersecutionStatus : State
         distPlayer = playerTrans - this.transform.position;
         RaycastHit hit;
         //Si no el controlador vision no puede ver al Jugador
-        if(!visionController.CanSeePlayer(out hit, true)) //true si miro al jugador
+        if(!visionController.CanSeePlayer(out hit, true)) //True si miro al jugador
         {
-            //Cambio al estado Alert
-            stateMachine.ActiveState(stateMachine.AlertStatus); 
-            enemyAnim.IsNotRun(); //dejo de correr
+            stateMachine.ActiveState(stateMachine.AlertStatus); //Cambio al estado Alert
+            enemyAnim.IsNotRun(); //Dejo de correr
             return;
         }
-        agente.SetDestination(playerTrans);//Agente se dirige a la pos de jugador
-        //Si la sitancia del jugador es menor a 3 o llega
-        if (Mathf.Abs(distPlayer.x) < 3.0f && Mathf.Abs(distPlayer.z) < 3.0f)
+        agente.SetDestination(playerTrans); //Agente se dirige a la pos de jugador
+        
+        if (Mathf.Abs(distPlayer.x) < 3.0f && Mathf.Abs(distPlayer.z) < 3.0f) //Si la sitancia del jugador es menor en x y z
         {
-            enemyAnim.IsNotRun(); //no corre
-            enemyAnim.Idle(); //no camina
-            //cambio de escena titulo q diga fin ??
+            enemyAnim.IsNotRun(); //No corre
+            enemyAnim.Idle(); //No camina
+            //Perdi
         }
-        navMeshController.UpdateDestinationPointNavMeshAgent();  //controlador actualiza el punto de destino del nav 
+        navMeshController.UpdateDestinationPointNavMeshAgent(); //Controlador actualiza el punto de destino del nav 
 	}
 }

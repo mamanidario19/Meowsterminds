@@ -1,3 +1,4 @@
+/* En esta clase gestionaremos los estados del Enemigo*/
 using UnityEngine;
 using System.Collections;
 
@@ -11,19 +12,18 @@ public class StateMachine : MonoBehaviour
     public State InitialState; //Estado Inicial El primero que se inicie
     public State EnemyAnim; //Animaciones
 
-
-    private State actualState; //Estado Actual Variable de tipo State, me permite acceder a sus atributos
+    private State actualState; //Estado Actual 
     void Start()
     {
         ActiveState(InitialState); //Activamos estado inicial
     }
     
-    public void ActiveState(State newState) //nuevo estado que queramos activar
+    public void ActiveState(State newState) //Nuevo estado que queramos activar
     {
-    if (actualState!=null) //como estado actual no tiene valor, se ejecuta todo si es distinto de nulo
-        actualState.enabled = false; //desactivamos el estado actual
-        actualState = newState; //asignamos nuevo estado
-        actualState.enabled = true; //activamos nuevo esatdo
+    if (actualState!=null) //Como estado actual no tiene valor, se ejecuta todo si es distinto de nulo
+        actualState.enabled = false; //Desactivamos el estado actual
+        actualState = newState; //Asignamos nuevo estado
+        actualState.enabled = true; //Activamos nuevo estado
 
 
    }

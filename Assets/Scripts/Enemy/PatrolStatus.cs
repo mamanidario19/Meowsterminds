@@ -1,3 +1,4 @@
+/* Esta clase actua como un metodo de estado "Estado Patrulla" del Enemigo*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,45 +11,39 @@ public class PatrolStatus : State
     private VisionController visionController;
     private int nextWayPoint; //Siguiente wayPoint
 
+    //Override dice que queremos sobreescribe el comportamiento de Awake
     protected override void Awake()
     {
-        base.Awake();
+        base.Awake(); //Hacemos referencia al tipo de la clase que heredamos, hacemos una llamada al Awake de State, termina ese y comienza este
         navMeshController = GetComponent<NavMeshController>();
         visionController = GetComponent<VisionController>();
     }
 	
 	void Update () {
         RaycastHit hit;
-        //Si puede ver al jugador
-        if(visionController.CanSeePlayer(out hit))
+        if(visionController.CanSeePlayer(out hit)) //Si puede ver al jugador
         {
-            //controlador sigue al objetivo con el hit transform
-            navMeshController.followTarget = hit.transform;
-            //pasamos al estado de persecusion
-            stateMachine.ActiveState(stateMachine.PersecutionStatus);
-            //la animacion de este estado es ? ...
+            navMeshController.followTarget = hit.transform; //Controlador sigue al objetivo con el hit transform
+            stateMachine.ActiveState(stateMachine.PersecutionStatus); //Pasamos al estado de persecusion
            return;
         }
-        //Si controlador llego     
-        if (navMeshController.Arrived())
+
+        if (navMeshController.Arrived()) //Si controlador llego 
         {
-            nextWayPoint = (nextWayPoint + 1) % WayPoints.Length; //uso modulo, el resto de lo que quede dividir este valor entre el total de elemtos que hay en el array
+            nextWayPoint = (nextWayPoint + 1) % WayPoints.Length; //Uso modulo, el resto de lo que quede dividir este valor entre el total de elemtos que hay en el array
             UpdateWayPointDestination(); //Actualiza punto de destino empezamos de 0 nuevamente
         }
 	}
 
     void OnEnable()
     {
-        //nextWayPoint = 0; //patrulla empezamos de cero ESTA MAL 
         UpdateWayPointDestination();
-        enemyAnim.Walk();//anim xq aca siempre entra en estado patrulla ?
+        enemyAnim.Walk();//Aca siempre entra en estado patrulla
     }
 
     void UpdateWayPointDestination()
     {
-        //cuando entramos a este estado, el controlador actualizara el punto de destino
-        navMeshController.UpdateDestinationPointNavMeshAgent(WayPoints[nextWayPoint].position);
-       
+        navMeshController.UpdateDestinationPointNavMeshAgent(WayPoints[nextWayPoint].position); //Cuando entramos a este estado, el controlador actualizara el punto de destino
     }
 
 }

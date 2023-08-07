@@ -1,9 +1,8 @@
+/* Esta es la Superclase que va a instanciar a todas las Subclases que la hereden */
 using UnityEngine;
 using System.Collections;
 
-//clase padre el cual tendra como herederas color y maquina de estado
-//tds nuestros hijos tendran los siguientes atributos
-//ES COMO INTERFACE, cuando modifique o agrege alguna otra accion de enemigo no me jode naa
+//Todos nuestros hijos tendran los siguientes atributos
 public class State : MonoBehaviour
 {
     protected StateMachine stateMachine; //La projeto, es privada pero puede ser usada por clases que hereden donde este definida (Hijas)

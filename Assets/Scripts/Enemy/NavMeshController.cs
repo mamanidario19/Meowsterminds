@@ -1,3 +1,4 @@
+/* En esta clase controlamos el NavMeshAgent*/ 
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,7 +15,7 @@ public class NavMeshController : MonoBehaviour
 	}
 	
     //Metodo que actualiza punto destino NavMeshAgent POINTS
-	public void UpdateDestinationPointNavMeshAgent(Vector3 destinationPoint) //
+	public void UpdateDestinationPointNavMeshAgent(Vector3 destinationPoint)
     {
         navMeshAgent.destination = destinationPoint; //Su destino sea igual a Punto Destino
         navMeshAgent.isStopped = false ; //Cada que llegamos a un punto continuamos camino
@@ -32,10 +33,10 @@ public class NavMeshController : MonoBehaviour
         navMeshAgent.isStopped = true ; 
     }
 
-    //llegue al objetivo o no? por eso bool
+    //Llegue al objetivo o no?
     public bool Arrived()
     {
         return navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance && !navMeshAgent.pathPending; 
-        //Si esta distancia (q falta ) es menor que la que tenemos definida,llegamos y no queda mas camino pendiente
+        //Si esta distancia (que falta) es menor que la que tenemos definida,llegamos y no queda mas camino pendiente
     }
 }
