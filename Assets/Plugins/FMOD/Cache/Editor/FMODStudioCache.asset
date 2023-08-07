@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: michiGtaSonidoMusica/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638269630594776136
+  lastModified: 638269732190779221
   FileSizes:
   - Name: Desktop
-    Value: 893408
+    Value: 898080
   Exists: 1
 --- !u!114 &-5074626545715876274
 MonoBehaviour:
@@ -136,10 +136,10 @@ MonoBehaviour:
   Path: michiGtaSonidoMusica/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638269630594796085
+  lastModified: 638269732190809122
   FileSizes:
   - Name: Desktop
-    Value: 898
+    Value: 936
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -161,12 +161,13 @@ MonoBehaviour:
   - {fileID: 6220567734730450106}
   - {fileID: -3369420375104964462}
   - {fileID: -8145880047781377314}
+  - {fileID: 6768867986341852172}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7265595207657442858}
   StringsBanks:
   - {fileID: -76988978214547907}
-  cacheTime: 638269630594796085
+  cacheTime: 638269732190809122
   cacheVersion: 131605
 --- !u!114 &2459791184004479414
 MonoBehaviour:
@@ -262,6 +263,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 62035
+--- !u!114 &6768867986341852172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/prueba/jumpSfx
+  m_EditorClassIdentifier: 
+  Path: event:/prueba/jumpSfx
+  Guid:
+    Data1: 1278289230
+    Data2: 1158085571
+    Data3: 842111413
+    Data4: 1420388774
+  Banks:
+  - {fileID: -7265595207657442858}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
 --- !u!114 &7658475483628727218
 MonoBehaviour:
   m_ObjectHideFlags: 0
