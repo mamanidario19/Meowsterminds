@@ -15,4 +15,9 @@ public class idleSfx : MonoBehaviour
     {
         
     }
+
+    public void ronronearSfx()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/prueba/purrSfx");
+    }
 }
