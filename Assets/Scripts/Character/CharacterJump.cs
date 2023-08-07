@@ -1,4 +1,4 @@
-/* Esta clase actï¿½a como un mï¿½todo del movimiento del personaje, modificando las velocidades en las que se mueve el */
+/* Esta clase actúa como un método del movimiento del personaje, modificando las velocidades en las que se mueve el */
 
 using System.Collections;
 using System.Collections.Generic;
@@ -6,12 +6,12 @@ using UnityEngine;
 
 public class CharacterJump : MonoBehaviour
 {
-    //Esta variable harï¿½ referencia al objeto que contiene el Rigidbody que necesitemos acceder//
+    //Esta variable hará referencia al objeto que contiene el Rigidbody que necesitemos acceder//
     public Rigidbody rb;
 
-    //Esta variable almacenarï¿½ la fuerza del salto//
+    //Esta variable almacenará la fuerza del salto//
     public float forceJump = 5f;
-    //Esta variable almacenarï¿½ un booleano que indica si el salto se puede ejecutar o no//
+    //Esta variable almacenará un booleano que indica si el salto se puede ejecutar o no//
     public bool canJump;
 
     // Start is called before the first frame update
@@ -20,7 +20,7 @@ public class CharacterJump : MonoBehaviour
         canJump = false; //Inicializamos la variable en false
     }
 
-    //Mï¿½todo que ejecutarï¿½ el movimiento de salto del personaje//
+    //Método que ejecutará el movimiento de salto del personaje//
     public void Jump()
     {
         rb.AddForce(new Vector3(0, forceJump, 0), ForceMode.Impulse); //Al rigidbody del personaje se le agrega una fuerza en el eje Y
