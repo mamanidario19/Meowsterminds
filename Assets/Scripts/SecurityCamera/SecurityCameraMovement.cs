@@ -24,6 +24,6 @@ public class SecurityCameraMovement : MonoBehaviour
         {
             speed = -speed;
         }
-        transform.Rotate(new Vector3(0f, 0f, currentAngle), speed * Time.deltaTime);
+        transform.Rotate(new Vector3(0f, currentAngle, 0f), speed * Time.deltaTime);
     }
 }
