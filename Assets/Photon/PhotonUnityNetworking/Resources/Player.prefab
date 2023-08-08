@@ -64,6 +64,7 @@ GameObject:
   - component: {fileID: 7952182558572946630}
   - component: {fileID: 4444816162800060167}
   - component: {fileID: 7996945726825965585}
+  - component: {fileID: 7369921147613937262}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -188,6 +189,24 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 0
   m_TeleportEnabled: 0
   m_TeleportIfDistanceGreaterThan: 3
+--- !u!114 &7369921147613937262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5100984231856904361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4299f986841cdac4a9f1596072cc1b65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  photonView: {fileID: 0}
+  codigosQueIgnorar:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &7931978579975599479
 GameObject:
   m_ObjectHideFlags: 0
