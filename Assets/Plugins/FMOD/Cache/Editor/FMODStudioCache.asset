@@ -42,6 +42,7 @@ MonoBehaviour:
   Path: michiGtaSonidoMusica/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
+
   lastModified: 638270378827468075
   FileSizes:
   - Name: Desktop
@@ -62,6 +63,7 @@ MonoBehaviour:
   Path: michiGtaSonidoMusica/Build/Desktop/Bank A.bank
   Name: Bank A
   StudioPath: bank:/Bank A
+
   lastModified: 638270378827337962
   FileSizes:
   - Name: Desktop
@@ -136,6 +138,7 @@ MonoBehaviour:
   Path: michiGtaSonidoMusica/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+
   lastModified: 638270378827478083
   FileSizes:
   - Name: Desktop
@@ -169,6 +172,7 @@ MonoBehaviour:
   - {fileID: -7265595207657442858}
   StringsBanks:
   - {fileID: -76988978214547907}
+
   cacheTime: 638270378827478083
   cacheVersion: 131605
 --- !u!114 &2459791184004479414
