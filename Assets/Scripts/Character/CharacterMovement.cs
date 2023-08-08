@@ -3,8 +3,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
 
-public class CharacterMovement : MonoBehaviour
+public class CharacterMovement : NetworkBehaviour
 {
     //Esta variable hará referencia al objeto que contiene el Script que necesitemos acceder//
     public CharacterInput characterInput;
@@ -22,6 +23,14 @@ public class CharacterMovement : MonoBehaviour
     {
         speed0 = speedMov; //Inicializamos la velocidad del movimiento
         speedCouch = speedMov * 0.5f; //Inicializamos la velocidad del movimiento de cuándo esté agachado
+    }
+
+    void FixedUpdate()
+    {
+        if (!isLocalPlayer)
+        {
+            return;
+        }
     }
 
     //Método que moverá y rotará a mi personaje al nuevo vector3 establecido normalizado//

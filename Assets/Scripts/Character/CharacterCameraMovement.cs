@@ -3,8 +3,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
 
-public class CharacterCameraMovement : MonoBehaviour
+public class CharacterCameraMovement : NetworkBehaviour
 {
     //Estas variables harán referencia al objeto que contiene el Script que necesitemos acceder//
     public CharacterInput characterInput;
@@ -17,6 +18,15 @@ public class CharacterCameraMovement : MonoBehaviour
     public float rotY = 0;
     public float rotX = 0;
 
+
+    void FixedUpdate()
+    {
+        if (!isLocalPlayer)
+        {
+            return;
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +35,8 @@ public class CharacterCameraMovement : MonoBehaviour
         rotY = angles.y; //Le asigna los varoles del mouseX en el anguloY de la variable 
         rotX = angles.x; //Le asigna los varoles del mouseY en el anguloX de la variable
     }
+
+
 
     //En este Update, asignaremos a las variables una nueva rotación para el objeto cuando no se este presionando el botón scroll del mouse//
     private void Update()
