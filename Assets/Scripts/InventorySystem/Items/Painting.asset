@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6bbb02d2961e9d940a20fa63786fe654, type: 3}
-  m_Name: Botin Secundario
+  m_Name: Painting
   m_EditorClassIdentifier: 
-  id: 2
-  itemName: TV
-  value: 180000
-  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  id: 3
+  itemName: Painting
+  value: 34000
+  icon: {fileID: 21300000, guid: a528c849937b4ff4da5255300f96f5b1, type: 3}
