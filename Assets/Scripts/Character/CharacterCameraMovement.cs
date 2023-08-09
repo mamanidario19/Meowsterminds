@@ -21,10 +21,10 @@ public class CharacterCameraMovement : NetworkBehaviour
 
     void FixedUpdate()
     {
-        if (!isLocalPlayer)
-        {
-            return;
-        }
+        //if (!isLocalPlayer)
+        //{
+        //    return;
+        //}
     }
 
     // Start is called before the first frame update
