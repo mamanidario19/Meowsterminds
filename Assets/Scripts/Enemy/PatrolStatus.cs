@@ -6,6 +6,7 @@ using UnityEngine;
 //Este script (Hijo) hereda los atributos de la clase Padre State
 public class PatrolStatus : State
 {
+    //public GameObject ListWayPoints;
     public Transform[] WayPoints;//Este array contiene los waiPoints
     private NavMeshController navMeshController; //Lo necesito para que el enemigo se dirija a los waypoints
     private VisionController visionController;
@@ -18,6 +19,10 @@ public class PatrolStatus : State
         base.Awake(); //Hacemos referencia al tipo de la clase que heredamos, hacemos una llamada al Awake de State, termina ese y comienza este
         navMeshController = GetComponent<NavMeshController>();
         visionController = GetComponent<VisionController>();
+        /*foreach (GameObject WayPoint in ListWayPoints)
+        {
+            WayPoints.Add(WayPoint.transform);
+        }*/
     }
 	
 	void Update () {

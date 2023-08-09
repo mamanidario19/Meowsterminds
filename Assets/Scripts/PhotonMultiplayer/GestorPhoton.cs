@@ -6,6 +6,12 @@ using Photon.Realtime;
 
 public class GestorPhoton : MonoBehaviourPunCallbacks
 {
+    public GameObject player;
+    public Transform spawnPoint;
+    public Transform spawnPointEnemy;
+    public GameObject enemy;
+    public GameObject money;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +31,10 @@ public class GestorPhoton : MonoBehaviourPunCallbacks
     }
 
     public override void OnJoinedRoom(){
-        PhotonNetwork.Instantiate("Player", new Vector3(Random.Range(46, 40),0), Quaternion.identity);
+        GameObject _player = PhotonNetwork.Instantiate(player.name, spawnPoint.position, Quaternion.identity);
+        _player.GetComponent<PlayerSetup>().IsLocalPlayer();
+        //GameObject _enemy = PhotonNetwork.Instantiate(enemy.name, spawnPointEnemy.position, Quaternion.identity);
+        GameObject _money = PhotonNetwork.Instantiate(money.name, new Vector3(-34.69f, 1.247f, -16.05f), Quaternion.identity);
     }
 
 }
