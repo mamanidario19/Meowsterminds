@@ -32,7 +32,7 @@ public class CharacterInput : MonoBehaviour
                 characterAnimator.IsCrouch();
                 characterCrouch.IsCrouch();                
             }
-            else
+            else 
             {
                 characterAnimator.IsNotCrouch();
                 characterCrouch.IsNotCrouch();

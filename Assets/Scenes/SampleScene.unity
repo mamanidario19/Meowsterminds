@@ -1369,11 +1369,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4995780379256896271, guid: b2f6d75dfcfd9154ca36c2fc7880137c, type: 3}
   m_PrefabInstance: {fileID: 1052375649}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &128016020 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4777840195834225937, guid: dd74dc1b42995a24e9714c0f75b43a41, type: 3}
-  m_PrefabInstance: {fileID: 457486202}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &128800893
 GameObject:
   m_ObjectHideFlags: 0
@@ -2540,11 +2535,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 227702327084189899, guid: 0802ff2784810cd4eabd40dbe14030d4, type: 3}
   m_PrefabInstance: {fileID: 312235696}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &281764957 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7345750295824765448, guid: dd74dc1b42995a24e9714c0f75b43a41, type: 3}
-  m_PrefabInstance: {fileID: 457486202}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &284136517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2898,11 +2888,11 @@ PrefabInstance:
     - target: {fileID: 967311604443601367, guid: ef1f2d850f3d65c459300381eb336b97, type: 3}
       propertyPath: lightPoint
       value: 
-      objectReference: {fileID: 281764957}
+      objectReference: {fileID: 0}
     - target: {fileID: 967311604443601367, guid: ef1f2d850f3d65c459300381eb336b97, type: 3}
       propertyPath: PlayerFlashlight
       value: 
-      objectReference: {fileID: 444487551}
+      objectReference: {fileID: 0}
     - target: {fileID: 2653523738475022984, guid: ef1f2d850f3d65c459300381eb336b97, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -2950,6 +2940,10 @@ PrefabInstance:
     - target: {fileID: 3429743365584752690, guid: ef1f2d850f3d65c459300381eb336b97, type: 3}
       propertyPath: m_Name
       value: 'Flashlight '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3429743365584752690, guid: ef1f2d850f3d65c459300381eb336b97, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6154743148444770988, guid: ef1f2d850f3d65c459300381eb336b97, type: 3}
       propertyPath: m_Name
@@ -4529,11 +4523,6 @@ Transform:
   m_Father: {fileID: 309283421}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!1 &444487551 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2234831990692274326, guid: dd74dc1b42995a24e9714c0f75b43a41, type: 3}
-  m_PrefabInstance: {fileID: 457486202}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &451414422 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6082428475521682682, guid: f3638bc957e46844e835931a51ea4ccd, type: 3}
@@ -8166,7 +8155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e4c1ec3ecc1c6f4788098302b37d909, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 128016020}
+  player: {fileID: 4777840195834225937, guid: dd74dc1b42995a24e9714c0f75b43a41, type: 3}
   spawnPoint: {fileID: 1307379142}
   spawnPointEnemy: {fileID: 1521229390}
   enemy: {fileID: 7658050411300937975, guid: 805bf250ef39946478475d8c46738918, type: 3}
@@ -21356,6 +21345,10 @@ PrefabInstance:
     - target: {fileID: -8563866778528087580, guid: 2928f4c47890c93408e0066475c89676, type: 3}
       propertyPath: sceneViewId
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8563866778528087580, guid: 2928f4c47890c93408e0066475c89676, type: 3}
+      propertyPath: ObservedComponents.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8400492914952615395, guid: 2928f4c47890c93408e0066475c89676, type: 3}
       propertyPath: m_RootOrder
