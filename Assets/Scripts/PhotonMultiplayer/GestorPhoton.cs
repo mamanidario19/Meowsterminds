@@ -27,7 +27,7 @@ public class GestorPhoton : MonoBehaviourPunCallbacks
         PhotonNetwork.JoinLobby();
     }
     public override void OnJoinedLobby (){
-        PhotonNetwork.JoinOrCreateRoom("Cuarto", new RoomOptions {MaxPlayers = 2}, TypedLobby.Default);
+        PhotonNetwork.JoinOrCreateRoom("Cuarto", new RoomOptions {MaxPlayers = 5}, TypedLobby.Default);
     }
 
     public override void OnJoinedRoom(){
