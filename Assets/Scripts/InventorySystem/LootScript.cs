@@ -15,13 +15,28 @@ public class LootScript : MonoBehaviourPunCallbacks, IInteractable, IStorable
     {
         print("Objeto conseguido");
         Store();
-        PhotonNetwork.Destroy(gameObject);
+        //PhotonNetwork.Destroy(gameObject);
+        RequestDestroy();
     }
     //Metodo encargado de disparar funcion para guardar items al inventario
     public void Store()
     {
         InventoryManager.Instance.Add(Item);
 
+    }
+
+    public void RequestDestroy()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            // El MasterClient puede destruir el objeto directamente
+            PhotonNetwork.Destroy(gameObject);
+        }
+        else
+        {
+            // Solicitar la destrucción al MasterClient
+            photonView.RPC("DestroyObjectRPC", RpcTarget.MasterClient);
+        }
     }
 
 }
