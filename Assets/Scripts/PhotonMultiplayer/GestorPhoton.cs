@@ -6,11 +6,19 @@ using Photon.Realtime;
 
 public class GestorPhoton : MonoBehaviourPunCallbacks
 {
+
+    public static GestorPhoton Instance;
+
     public GameObject player;
     public Transform spawnPoint;
     public Transform spawnPointEnemy;
     public GameObject enemy;
     public GameObject money;
+
+    void Awake()
+    {
+        Instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -21,16 +29,23 @@ public class GestorPhoton : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        
+        PhotonNetwork.AutomaticallySyncScene= true;
     }
     public override void OnConnectedToMaster (){
         PhotonNetwork.JoinLobby();
     }
     public override void OnJoinedLobby (){
-        PhotonNetwork.JoinOrCreateRoom("Cuarto", new RoomOptions {MaxPlayers = 5}, TypedLobby.Default);
+        MenuManager.Instance.OpenMenu("title");
+    }
+
+    public void CreateRoom()
+    {
+        PhotonNetwork.JoinOrCreateRoom("Cuarto", new RoomOptions {MaxPlayers = 5}, TypedLobby.Default); 
+        PhotonNetwork.LoadLevel(1);
     }
 
     public override void OnJoinedRoom(){
+       
         GameObject _player = PhotonNetwork.Instantiate(player.name, spawnPoint.position, Quaternion.identity);
         _player.GetComponent<PlayerSetup>().IsLocalPlayer();
         //GameObject _enemy = PhotonNetwork.Instantiate(enemy.name, spawnPointEnemy.position, Quaternion.identity);
