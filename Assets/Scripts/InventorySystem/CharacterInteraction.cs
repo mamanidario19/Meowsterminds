@@ -9,7 +9,7 @@ public class CharacterInteraction : MonoBehaviour
     private void OnTriggerStay(Collider obj)
     {
         IInteractable interactable = obj.GetComponent<IInteractable>();
-        if (interactable != null && Input.GetKey(KeyCode.E)) //si es IInteractable y Accionamos se ejecuta la funcion de dicha interfaz
+        if (interactable != null && Input.GetKeyDown(KeyCode.E)) //si es IInteractable y Accionamos se ejecuta la funcion de dicha interfaz
         {
             interactable.Interact();
         }
