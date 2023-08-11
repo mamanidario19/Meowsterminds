@@ -8124,6 +8124,8 @@ MonoBehaviour:
   spawnPointEnemy: {fileID: 1521229390}
   enemy: {fileID: 7658050411300937975, guid: 805bf250ef39946478475d8c46738918, type: 3}
   money: {fileID: 9063592249877586422, guid: 2928f4c47890c93408e0066475c89676, type: 3}
+  Loot:
+  - {fileID: 11400000, guid: c6e36a4a4c8fee24bb4ada2e7ec6cae8, type: 2}
 --- !u!4 &879476900
 Transform:
   m_ObjectHideFlags: 0
@@ -20994,6 +20996,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Painting
       objectReference: {fileID: 0}
+    - target: {fileID: 4535200164076703611, guid: 7583972e088414d45befea2030248a84, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6694683356883677217, guid: 7583972e088414d45befea2030248a84, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -21112,6 +21118,10 @@ PrefabInstance:
     - target: {fileID: 3620363213138635876, guid: 79762947e04f80f4db9eb656087b5647, type: 3}
       propertyPath: m_Name
       value: Laptop
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620363213138635876, guid: 79762947e04f80f4db9eb656087b5647, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3749215478034670924, guid: 79762947e04f80f4db9eb656087b5647, type: 3}
       propertyPath: sceneViewId

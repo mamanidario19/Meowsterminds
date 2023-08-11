@@ -14,6 +14,7 @@ public class GestorPhoton : MonoBehaviourPunCallbacks
     public Transform spawnPointEnemy;
     public GameObject enemy;
     public GameObject money;
+    public List<Item> Loot = new List<Item>();
 
     void Awake()
     {
@@ -50,15 +51,16 @@ public class GestorPhoton : MonoBehaviourPunCallbacks
         {
             GameObject _player = PhotonNetwork.Instantiate(player.name, spawnPoint.position, Quaternion.identity);
             _player.GetComponent<PlayerSetup>().IsLocalPlayer();
-            GameObject _money = PhotonNetwork.Instantiate(money.name, new Vector3(-34.69f, 1.247f, -16.05f), Quaternion.identity);
+            
+            foreach (var item in Loot) // Vinculamos los valores, desde el scriptableObject a los componentes del inventario
+            {
+                PhotonNetwork.Instantiate(item.prefab.name, item.location, Quaternion.identity);
+            }
         }else{
             GameObject _player = PhotonNetwork.Instantiate(player.name, spawnPoint.position, Quaternion.identity);
             _player.GetComponent<PlayerSetup>().IsLocalPlayer();
         }
        
-        
-        //GameObject _enemy = PhotonNetwork.Instantiate(enemy.name, spawnPointEnemy.position, Quaternion.identity);
-        
     }
 
 }

@@ -2,9 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
 
 
-public class LootScript : MonoBehaviour, IInteractable, IStorable
+public class LootScript : MonoBehaviourPunCallbacks, IInteractable, IStorable
 {
     public Item Item;
     //Metodo encargado de disparar funcion para interactuar con items
@@ -13,7 +15,7 @@ public class LootScript : MonoBehaviour, IInteractable, IStorable
     {
         print("Objeto conseguido");
         Store();
-        this.gameObject.SetActive(false);
+        PhotonNetwork.Destroy(gameObject);
     }
     //Metodo encargado de disparar funcion para guardar items al inventario
     public void Store()

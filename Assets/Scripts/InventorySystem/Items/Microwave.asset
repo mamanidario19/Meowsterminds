@@ -16,3 +16,4 @@ MonoBehaviour:
   itemName: Microwave
   value: 2
   icon: {fileID: 21300000, guid: a528c849937b4ff4da5255300f96f5b1, type: 3}
+  location: {x: 20.5, y: 24.95779, z: 5.43}

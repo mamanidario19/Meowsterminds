@@ -10,5 +10,7 @@ public class Item : ScriptableObject //Creamos el registro de un item
     public string itemName; //Nombre de item
     public int value; //futuro valor de comercio
     public Sprite icon; //icono representativo de objeto
+    public Vector3 location;
+    public GameObject prefab;
 
 }
