@@ -114,6 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Item: {fileID: 11400000, guid: b1319acfa96f7e043900c40ad5464883, type: 2}
+  gm: {fileID: 0}
 --- !u!65 &3293707016028837166
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -133,7 +134,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0.13182728, z: -0.00000024400651}
 --- !u!114 &-4212504906548445612
 MonoBehaviour:

@@ -17,4 +17,5 @@ MonoBehaviour:
   value: 34000
   icon: {fileID: 21300000, guid: a528c849937b4ff4da5255300f96f5b1, type: 3}
   location: {x: 20.05, y: 5.72, z: 4.43}
+  rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
   prefab: {fileID: 4535200164076703611, guid: 7583972e088414d45befea2030248a84, type: 3}
