@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class CharacterInput : MonoBehaviour
 {
-    //Estas variables harán referencia al objeto que contiene el Script que necesitemos acceder//
+    //Estas variables harï¿½n referencia al objeto que contiene el Script que necesitemos acceder//
     public CharacterJump characterJump;
     public CharacterCrouch characterCrouch;
     public CharacterMovement characterMovement;
@@ -15,8 +15,8 @@ public class CharacterInput : MonoBehaviour
     public float x, y;
     public float mouseX, mouseY;
 
-    //En este update estableceremos unas condicionales que evaluen cúando van a poder se llamadas sus respectivas funciones ya predefinidas,
-    //también almacenamos los valores en X e Y desde sus GetAxis//
+    //En este update estableceremos unas condicionales que evaluen cï¿½ando van a poder se llamadas sus respectivas funciones ya predefinidas,
+    //tambiï¿½n almacenamos los valores en X e Y desde sus GetAxis//
     void Update()
     {
         if (characterJump.canJump == true)
@@ -32,7 +32,7 @@ public class CharacterInput : MonoBehaviour
                 characterAnimator.IsCrouch();
                 characterCrouch.IsCrouch();                
             }
-            else
+            else 
             {
                 characterAnimator.IsNotCrouch();
                 characterCrouch.IsNotCrouch();

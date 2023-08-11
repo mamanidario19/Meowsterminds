@@ -16,3 +16,5 @@ MonoBehaviour:
   itemName: Money
   value: 2
   icon: {fileID: 21300000, guid: a528c849937b4ff4da5255300f96f5b1, type: 3}
+  location: {x: -34.5, y: 1.26, z: -16.06}
+  prefab: {fileID: 9063592249877586422, guid: 2928f4c47890c93408e0066475c89676, type: 3}
