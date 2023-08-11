@@ -15,6 +15,7 @@ MonoBehaviour:
   id: 4
   itemName: Microwave
   value: 2
-  icon: {fileID: 21300000, guid: a528c849937b4ff4da5255300f96f5b1, type: 3}
+  icon: {fileID: 21300000, guid: cbecc946ba920ec49b72204cfa593b68, type: 3}
   location: {x: 27.6, y: 2.99, z: 8.93}
+  rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
   prefab: {fileID: 1378875594082326764, guid: 069a4e15f1deedf41afc255eb8cde473, type: 3}

@@ -40,6 +40,9 @@ MonoBehaviour:
   - Fire
   - RespawnSpaceship
   - DestroyObjectRPC
+  - ScoreHook
+  - AnnounceWinner
+  - CheckWinCondition
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

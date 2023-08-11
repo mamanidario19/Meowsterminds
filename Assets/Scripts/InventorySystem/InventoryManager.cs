@@ -10,6 +10,7 @@ public class InventoryManager : MonoBehaviour
     public List<Item> Items = new List<Item>(); //Creamos una nueva lista para los items recogidos 
     public Transform ItemContent; //obtenemos Data de ScriptableObjetc
     public GameObject InventoryItem; //obtenemos Data de ScriptableObjetc
+    
     private void Awake()
     {
         Instance = this;
