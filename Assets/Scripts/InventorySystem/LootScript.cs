@@ -25,6 +25,12 @@ public class LootScript : MonoBehaviourPunCallbacks, IInteractable, IStorable
 
     }
 
+    [PunRPC]
+    private void DestroyObjectRPC()
+    {
+        PhotonNetwork.Destroy(gameObject);
+    }
+
     public void RequestDestroy()
     {
         if (PhotonNetwork.IsMasterClient)
