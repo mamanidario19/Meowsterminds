@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviourPunCallbacks
 {
     public static GameManager Instance;
-    public int totalObjectsToCollect = 7;
+    public int totalObjectsToCollect = 3;
     private int totalCollectedObjects = 0;
     public Text winText;
 
