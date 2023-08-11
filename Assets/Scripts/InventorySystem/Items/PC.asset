@@ -16,3 +16,5 @@ MonoBehaviour:
   itemName: PC
   value: 2
   icon: {fileID: 21300000, guid: a528c849937b4ff4da5255300f96f5b1, type: 3}
+  location: {x: -42.91, y: 2.88, z: 8}
+  prefab: {fileID: 5688657278379306492, guid: b7b521bd27bb5a84a8d3a2691cb36115, type: 3}

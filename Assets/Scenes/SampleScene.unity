@@ -8126,6 +8126,12 @@ MonoBehaviour:
   money: {fileID: 9063592249877586422, guid: 2928f4c47890c93408e0066475c89676, type: 3}
   Loot:
   - {fileID: 11400000, guid: c6e36a4a4c8fee24bb4ada2e7ec6cae8, type: 2}
+  - {fileID: 11400000, guid: 858e11a9c384bbd46b6acb29349b9675, type: 2}
+  - {fileID: 11400000, guid: 8d3deca7b5d245b49a9f77be2748045f, type: 2}
+  - {fileID: 11400000, guid: 2766586f4f260b744a2313a627c65129, type: 2}
+  - {fileID: 11400000, guid: bdfb9efb47c16624caeb5b6203f748ae, type: 2}
+  - {fileID: 11400000, guid: 6cdc8428838409a4e9b2156051b503a9, type: 2}
+  - {fileID: 11400000, guid: b1319acfa96f7e043900c40ad5464883, type: 2}
 --- !u!4 &879476900
 Transform:
   m_ObjectHideFlags: 0
@@ -20914,6 +20920,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dark Case
       objectReference: {fileID: 0}
+    - target: {fileID: 5688657278379306492, guid: b7b521bd27bb5a84a8d3a2691cb36115, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20979,6 +20989,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ps5
       objectReference: {fileID: 0}
+    - target: {fileID: 8970994792463599462, guid: e7ac1d2d1932a0a4da1d3cae2b7b90a1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20998,7 +21012,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4535200164076703611, guid: 7583972e088414d45befea2030248a84, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6694683356883677217, guid: 7583972e088414d45befea2030248a84, type: 3}
       propertyPath: m_RootOrder
@@ -21253,6 +21267,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmartPhoneWhite
       objectReference: {fileID: 0}
+    - target: {fileID: 649920018849767269, guid: f7bbd201457030d4aa8c846bde5db096, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3498623407426080245, guid: f7bbd201457030d4aa8c846bde5db096, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -21435,6 +21453,10 @@ PrefabInstance:
     - target: {fileID: 1378875594082326764, guid: 069a4e15f1deedf41afc255eb8cde473, type: 3}
       propertyPath: m_Name
       value: Microwave
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378875594082326764, guid: 069a4e15f1deedf41afc255eb8cde473, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5206471511258309964, guid: 069a4e15f1deedf41afc255eb8cde473, type: 3}
       propertyPath: sceneViewId

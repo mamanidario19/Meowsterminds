@@ -16,3 +16,5 @@ MonoBehaviour:
   itemName: PS5
   value: 180000
   icon: {fileID: 21300000, guid: c383b561bfc19c8499c38534610b0565, type: 3}
+  location: {x: 36.02, y: 1.13, z: -6.93}
+  prefab: {fileID: 8970994792463599462, guid: e7ac1d2d1932a0a4da1d3cae2b7b90a1, type: 3}
