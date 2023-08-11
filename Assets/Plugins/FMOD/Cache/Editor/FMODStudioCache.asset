@@ -62,10 +62,10 @@ MonoBehaviour:
   Path: FmodResources/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638273070779618359
+  lastModified: 638273078951387926
   FileSizes:
   - Name: Desktop
-    Value: 1072
+    Value: 1116
   Exists: 1
 --- !u!114 &-3369420375104964462
 MonoBehaviour:
@@ -145,12 +145,13 @@ MonoBehaviour:
   - {fileID: 3973717627585816105}
   - {fileID: 4053436750891543813}
   - {fileID: 7003796576195208267}
+  - {fileID: 6976030822230992724}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1338039538055725368}
   StringsBanks:
   - {fileID: -7620619207309332548}
-  cacheTime: 638273070779618359
+  cacheTime: 638273078951387926
   cacheVersion: 131605
 --- !u!114 &1338039538055725368
 MonoBehaviour:
@@ -167,10 +168,10 @@ MonoBehaviour:
   Path: FmodResources/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638273070779589083
+  lastModified: 638273078951358648
   FileSizes:
   - Name: Desktop
-    Value: 1094912
+    Value: 1098208
   Exists: 1
 --- !u!114 &2459791184004479414
 MonoBehaviour:
@@ -347,6 +348,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 500
+--- !u!114 &6976030822230992724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/buttomConfirm
+  m_EditorClassIdentifier: 
+  Path: event:/buttomConfirm
+  Guid:
+    Data1: 418378104
+    Data2: 1337733741
+    Data3: -249685360
+    Data4: 683166287
+  Banks:
+  - {fileID: 1338039538055725368}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 186
 --- !u!114 &7003796576195208267
 MonoBehaviour:
   m_ObjectHideFlags: 0
