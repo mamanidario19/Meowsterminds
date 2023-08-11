@@ -62,10 +62,17 @@ MonoBehaviour:
   Path: FmodResources/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+<<<<<<< Updated upstream
   lastModified: 638273145445285910
   FileSizes:
   - Name: Desktop
     Value: 1154
+=======
+  lastModified: 638273276218142082
+  FileSizes:
+  - Name: Desktop
+    Value: 1162
+>>>>>>> Stashed changes
   Exists: 1
 --- !u!114 &-3369420375104964462
 MonoBehaviour:
@@ -147,12 +154,21 @@ MonoBehaviour:
   - {fileID: 7003796576195208267}
   - {fileID: 6976030822230992724}
   - {fileID: 6922083630679121312}
+<<<<<<< Updated upstream
+=======
+  - {fileID: -4401496251409409560}
+  - {fileID: 6998797945698799982}
+>>>>>>> Stashed changes
   EditorParameters: []
   MasterBanks:
   - {fileID: 1338039538055725368}
   StringsBanks:
   - {fileID: -7620619207309332548}
+<<<<<<< Updated upstream
   cacheTime: 638273145445285910
+=======
+  cacheTime: 638273276218142082
+>>>>>>> Stashed changes
   cacheVersion: 131605
 --- !u!114 &1338039538055725368
 MonoBehaviour:
@@ -169,10 +185,17 @@ MonoBehaviour:
   Path: FmodResources/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
+<<<<<<< Updated upstream
   lastModified: 638273145445256637
   FileSizes:
   - Name: Desktop
     Value: 1224576
+=======
+  lastModified: 638273276218112162
+  FileSizes:
+  - Name: Desktop
+    Value: 1228768
+>>>>>>> Stashed changes
   Exists: 1
 --- !u!114 &2459791184004479414
 MonoBehaviour:
@@ -376,7 +399,11 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5500
+<<<<<<< Updated upstream
 --- !u!114 &6976030822230992724
+=======
+--- !u!114 &6998797945698799982
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -386,6 +413,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
   m_Name: event:/buttomConfirm
   m_EditorClassIdentifier: 
   Path: event:/buttomConfirm
@@ -394,6 +422,16 @@ MonoBehaviour:
     Data2: 1337733741
     Data3: -249685360
     Data4: 683166287
+=======
+  m_Name: event:/buttomSfx
+  m_EditorClassIdentifier: 
+  Path: event:/buttomSfx
+  Guid:
+    Data1: -905484024
+    Data2: 1099647569
+    Data3: 364526478
+    Data4: -990223145
+>>>>>>> Stashed changes
   Banks:
   - {fileID: 1338039538055725368}
   IsStream: 0
@@ -402,6 +440,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< Updated upstream
   Length: 186
 --- !u!114 &7003796576195208267
 MonoBehaviour:
@@ -430,6 +469,9 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 762
+=======
+  Length: 0
+>>>>>>> Stashed changes
 --- !u!114 &7658475483628727218
 MonoBehaviour:
   m_ObjectHideFlags: 0
