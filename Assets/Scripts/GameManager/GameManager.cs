@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviourPunCallbacks
     public static GameManager Instance;
     public int totalObjectsToCollect = 3;
     private int totalCollectedObjects = 0;
-    public Text winText;
 
     private void Awake()
     {
@@ -31,8 +30,4 @@ public class GameManager : MonoBehaviourPunCallbacks
         }
     }
 
-    private void AnnounceWinner()
-    {
-        winText.text = "¡Los jugadores han ganado!";
-    }
 }
