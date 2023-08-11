@@ -24,5 +24,6 @@ public class StateMachine : MonoBehaviour
         actualState.enabled = false; //Desactivamos el estado actual
         actualState = newState; //Asignamos nuevo estado
         actualState.enabled = true; //Activamos nuevo esatdo
-    }
+
+   }
 }

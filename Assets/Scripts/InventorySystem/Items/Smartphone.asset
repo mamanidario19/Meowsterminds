@@ -15,7 +15,6 @@ MonoBehaviour:
   id: 5
   itemName: Smartphone
   value: 2
-  icon: {fileID: 21300000, guid: ceb8752dc1a83f0468f4ae8915158cc8, type: 3}
+  icon: {fileID: 21300000, guid: a528c849937b4ff4da5255300f96f5b1, type: 3}
   location: {x: -23.72, y: 2.11, z: 18.11}
-  rotation: {x: 0.70710677, y: 0, z: 0, w: -0.70710677}
   prefab: {fileID: 649920018849767269, guid: f7bbd201457030d4aa8c846bde5db096, type: 3}

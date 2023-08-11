@@ -11,7 +11,6 @@ public class PersecutionStatus : State
     public UnityEngine.AI.NavMeshAgent agente;
     public Vector3 distPlayer; //Distancia jugador
     public Vector3 playerTrans; //Transform player
-    public bool playerCatch;
     //Override dice que queremos sobreescribe el comportamiento de Awake
     protected override void Awake()
     {
@@ -23,17 +22,11 @@ public class PersecutionStatus : State
     void OnEnable()
     {
         enemyAnim.Run(); //En este estado siempre corre
-        playerCatch = false;
     }
 	
 	void Update () {
-        
-        if(playerCatch == false)
-        {
-            playerTrans = GameObject.FindGameObjectWithTag("Player").transform.position;
-            distPlayer = playerTrans - this.transform.position;
-        }
-        
+        playerTrans = GameObject.FindGameObjectWithTag("Player").transform.position;
+        distPlayer = playerTrans - this.transform.position;
         RaycastHit hit;
         //Si no el controlador vision no puede ver al Jugador
         if(!visionController.CanSeePlayer(out hit, true)) //true si miro al jugador
@@ -45,7 +38,6 @@ public class PersecutionStatus : State
         agente.SetDestination(playerTrans); //Agente se dirige a la pos de jugador
         if (Mathf.Abs(distPlayer.x) < 3.0f && Mathf.Abs(distPlayer.z) < 3.0f)//Si la sitancia del jugador es menor a 3 en el eje x y z
         {
-            playerCatch = true;
             enemyAnim.IsNotRun(); //No corre
         }
         navMeshController.UpdateDestinationPointNavMeshAgent(); //Controlador actualiza el punto de destino del nav   

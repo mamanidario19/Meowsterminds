@@ -54,7 +54,7 @@ public class GestorPhoton : MonoBehaviourPunCallbacks
             
             foreach (var item in Loot) // Vinculamos los valores, desde el scriptableObject a los componentes del inventario
             {
-                PhotonNetwork.Instantiate(item.prefab.name, item.location, item.rotation);
+                PhotonNetwork.Instantiate(item.prefab.name, item.location, Quaternion.identity);
             }
         }else{
             GameObject _player = PhotonNetwork.Instantiate(player.name, spawnPoint.position, Quaternion.identity);

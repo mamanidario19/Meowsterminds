@@ -9,28 +9,20 @@ using Photon.Realtime;
 public class LootScript : MonoBehaviourPunCallbacks, IInteractable, IStorable
 {
     public Item Item;
-    public GameManager gm;
-
     //Metodo encargado de disparar funcion para interactuar con items
+
     public void Interact()
     {
         print("Objeto conseguido");
         Store();
-        if(photonView.IsMine)
-        {
-            gm = GameObject.Find("GameManager").GetComponent<GameManager>();
-            if(gm != null)
-            {
-                gm.CollectObject(1);
-            }
-        
-            RequestDestroy();
-        }
+        //PhotonNetwork.Destroy(gameObject);
+        RequestDestroy();
     }
     //Metodo encargado de disparar funcion para guardar items al inventario
     public void Store()
     {
         InventoryManager.Instance.Add(Item);
+
     }
 
     [PunRPC]
@@ -52,4 +44,5 @@ public class LootScript : MonoBehaviourPunCallbacks, IInteractable, IStorable
             photonView.RPC("DestroyObjectRPC", RpcTarget.MasterClient);
         }
     }
+
 }
