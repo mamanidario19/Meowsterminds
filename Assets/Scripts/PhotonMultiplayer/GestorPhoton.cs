@@ -12,7 +12,15 @@ public class GestorPhoton : MonoBehaviourPunCallbacks
     public GameObject enemy;
     public GameObject money;
 
+    //propiedades jugador
+   /*  ExitGames.Client.Photon.Hashtable playerProperties = new ExitGames.Client.Photon.Hashtable();
+
+    //
+    public static NetworkManager instancia; */
     // Start is called before the first frame update
+    private void Awake() {
+        /* instancia = this; */
+    }
     void Start()
     {
         PhotonNetwork.ConnectUsingSettings();
@@ -36,5 +44,11 @@ public class GestorPhoton : MonoBehaviourPunCallbacks
         //GameObject _enemy = PhotonNetwork.Instantiate(enemy.name, spawnPointEnemy.position, Quaternion.identity);
         GameObject _money = PhotonNetwork.Instantiate(money.name, new Vector3(-34.69f, 1.247f, -16.05f), Quaternion.identity);
     }
+
+    /* public voir ColocarNombreJugador(string name){
+
+    } */
+
+    
 
 }
