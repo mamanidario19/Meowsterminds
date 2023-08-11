@@ -45,11 +45,20 @@ public class GestorPhoton : MonoBehaviourPunCallbacks
     }
 
     public override void OnJoinedRoom(){
+
+        if(PhotonNetwork.IsMasterClient)
+        {
+            GameObject _player = PhotonNetwork.Instantiate(player.name, spawnPoint.position, Quaternion.identity);
+            _player.GetComponent<PlayerSetup>().IsLocalPlayer();
+            GameObject _money = PhotonNetwork.Instantiate(money.name, new Vector3(-34.69f, 1.247f, -16.05f), Quaternion.identity);
+        }else{
+            GameObject _player = PhotonNetwork.Instantiate(player.name, spawnPoint.position, Quaternion.identity);
+            _player.GetComponent<PlayerSetup>().IsLocalPlayer();
+        }
        
-        GameObject _player = PhotonNetwork.Instantiate(player.name, spawnPoint.position, Quaternion.identity);
-        _player.GetComponent<PlayerSetup>().IsLocalPlayer();
+        
         //GameObject _enemy = PhotonNetwork.Instantiate(enemy.name, spawnPointEnemy.position, Quaternion.identity);
-        GameObject _money = PhotonNetwork.Instantiate(money.name, new Vector3(-34.69f, 1.247f, -16.05f), Quaternion.identity);
+        
     }
 
 }
