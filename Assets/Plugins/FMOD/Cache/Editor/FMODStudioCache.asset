@@ -42,11 +42,38 @@ MonoBehaviour:
   Path: FmodResources/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638273354627845906
+  lastModified: 638274701510779630
   FileSizes:
   - Name: Desktop
-    Value: 1162
+    Value: 1212
   Exists: 1
+--- !u!114 &-6641131518244644252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/policeSirenSfx
+  m_EditorClassIdentifier: 
+  Path: event:/policeSirenSfx
+  Guid:
+    Data1: -2130603317
+    Data2: 1135656127
+    Data3: -1681476962
+    Data4: 413669476
+  Banks:
+  - {fileID: 2020582927915065847}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 26500
 --- !u!114 &-3816652681365551999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,13 +207,14 @@ MonoBehaviour:
   - {fileID: -1477912284787868676}
   - {fileID: -3816652681365551999}
   - {fileID: 8820229066047072546}
-  - {fileID: 868216552635785099}
+  - {fileID: 2793617803769120761}
+  - {fileID: -6641131518244644252}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2020582927915065847}
   StringsBanks:
   - {fileID: -6721674448114481756}
-  cacheTime: 638273354627845906
+  cacheTime: 638274701510779630
   cacheVersion: 131605
 --- !u!114 &675558373684597192
 MonoBehaviour:
@@ -215,33 +243,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 14592
---- !u!114 &868216552635785099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/bottomConfirm
-  m_EditorClassIdentifier: 
-  Path: event:/bottomConfirm
-  Guid:
-    Data1: 1476798254
-    Data2: 1226701331
-    Data3: -1667894911
-    Data4: -1022111655
-  Banks:
-  - {fileID: 2020582927915065847}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &2020582927915065847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,11 +258,38 @@ MonoBehaviour:
   Path: FmodResources/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638273354627815993
+  lastModified: 638274701510750339
   FileSizes:
   - Name: Desktop
-    Value: 1228768
+    Value: 1449440
   Exists: 1
+--- !u!114 &2793617803769120761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/buttomConfirm
+  m_EditorClassIdentifier: 
+  Path: event:/buttomConfirm
+  Guid:
+    Data1: 418378104
+    Data2: 1337733741
+    Data3: -249685360
+    Data4: 683166287
+  Banks:
+  - {fileID: 2020582927915065847}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 186
 --- !u!114 &4905252678161445048
 MonoBehaviour:
   m_ObjectHideFlags: 0

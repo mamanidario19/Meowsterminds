@@ -2184,11 +2184,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MyEvent:
     Guid:
-      Data1: 1476798254
-      Data2: 1226701331
-      Data3: -1667894911
-      Data4: -1022111655
-    Path: event:/bottomConfirm
+      Data1: 418378104
+      Data2: 1337733741
+      Data3: -249685360
+      Data4: 683166287
+    Path: event:/buttomConfirm
 --- !u!1 &1564242218
 GameObject:
   m_ObjectHideFlags: 0
@@ -2755,11 +2755,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MyEvent:
     Guid:
-      Data1: 1476798254
-      Data2: 1226701331
-      Data3: -1667894911
-      Data4: -1022111655
-    Path: event:/bottomConfirm
+      Data1: 418378104
+      Data2: 1337733741
+      Data3: -249685360
+      Data4: 683166287
+    Path: event:/buttomConfirm
 --- !u!4 &1966341948 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a76174d99726abf4cb2d155e44cff245, type: 3}
