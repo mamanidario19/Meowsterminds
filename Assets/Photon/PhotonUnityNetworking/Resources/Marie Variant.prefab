@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Marie Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 9026276771430366539, guid: 50ac6e82bb7bf3641971c156836da88e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
