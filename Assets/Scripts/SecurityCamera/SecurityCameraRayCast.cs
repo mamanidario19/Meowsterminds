@@ -48,7 +48,7 @@ public class SecurityCameraRayCast : MonoBehaviour
 
             if (hit.transform.CompareTag("Player"))
             {
-                Debug.LogError("Te estoy viendo!!!!!!!!!");
+                Debug.Log("Te estoy viendo!!!!!!!!!");
             }
         }
     }
