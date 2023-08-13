@@ -69,10 +69,10 @@ MonoBehaviour:
   Path: FmodResources/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638274778489842162
+  lastModified: 638274789864760070
   FileSizes:
   - Name: Desktop
-    Value: 1318
+    Value: 1368
   Exists: 1
 --- !u!114 &-6641131518244644252
 MonoBehaviour:
@@ -265,12 +265,13 @@ MonoBehaviour:
   - {fileID: -7615067431880770518}
   - {fileID: 8806385950777161346}
   - {fileID: -792479253723668456}
+  - {fileID: 9209387584101345441}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2020582927915065847}
   StringsBanks:
   - {fileID: -6721674448114481756}
-  cacheTime: 638274778489842162
+  cacheTime: 638274789864760070
   cacheVersion: 131605
 --- !u!114 &2020582927915065847
 MonoBehaviour:
@@ -287,10 +288,10 @@ MonoBehaviour:
   Path: FmodResources/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638274778489803113
+  lastModified: 638274789864721032
   FileSizes:
   - Name: Desktop
-    Value: 1452096
+    Value: 1867904
   Exists: 1
 --- !u!114 &2793617803769120761
 MonoBehaviour:
@@ -420,3 +421,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &9209387584101345441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemy/enemySnarlSfx
+  m_EditorClassIdentifier: 
+  Path: event:/Enemy/enemySnarlSfx
+  Guid:
+    Data1: -1914287219
+    Data2: 1112824184
+    Data3: -1795684183
+    Data4: 228923212
+  Banks:
+  - {fileID: 2020582927915065847}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7500

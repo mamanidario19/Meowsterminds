@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{8e126842-7365-47a9-af80-6c7986d3b13a}">
+		<property name="assetPath">
+			<value>growled-dog.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>47.380317460317457</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{082e5581-f7f4-4890-a08f-dd61711d48b7}</destination>
+		</relationship>
+	</object>
+</objects>
