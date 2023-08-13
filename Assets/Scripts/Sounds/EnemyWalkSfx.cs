@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class jumpSfx : MonoBehaviour
+public class EnemyWalkSfx : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,9 +15,10 @@ public class jumpSfx : MonoBehaviour
     {
         
     }
-    public void saltoSfx()
+
+    public void caminarEnemigoSfx()
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/Marie/jump3dSfx");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/enemy/enemyWalkSfx");
 
     }
 }
